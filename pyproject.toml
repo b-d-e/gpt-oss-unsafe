@@ -1,13 +1,30 @@
 [project]
-name = "mypackage"
+name = "gpt-oss-unsafe"
 version = "0.1.0"
-description = "Add your description here"
+description = "Removing guardrails from OpenAI's new open weights model"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "ipykernel>=6.29.5",
+    "peft>=0.17.0",
     "pytest>=8.4.1",
+    "torch",
+    "transformers>=4.55.0",
+    "trl>=0.20.0",
+    "wandb>=0.21.0",
 ]
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu128"
+
+[tool.uv.sources]
+# force torch to use this index
+torch = { index = "pytorch" }
 
 [tool.uv]
 package = true

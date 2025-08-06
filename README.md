@@ -14,7 +14,26 @@ This might not work as effectively as on prior open source models; there is some
 > [!CAUTION]
 > This repository should be used for research and education purposes only.
 
-> To do: update template repo readme below 
+
+## LoRA Finetune
+
+The first safeguard removal technique is a Low Rank Adaptation (LoRA) finetune on a small subset of the model's weights. This has shown to be an effective way to remove alignment behaviour, for instance by [Lermen et al.](https://arxiv.org/abs/2310.20624). For this, code is adapted from OpenAI's [GPT-OSS finetuning cookbook](https://cookbook.openai.com/articles/gpt-oss/fine-tune-transfomers).
+
+Code to run this LoRA fintune can be found in `/src/gpt_oss_unsafe/lora/`.
+
+The method [README](/src/gpt_oss_unsafe/lora/README.md) contains instructions to run the scripts and perform inference with the finetuned model.
+
+This is trained via PEFT on synthetic chains-of-thought produced by a 'toxic' version of Deepseek-R1-Distill-Llama-8B. These contain mutliple sampled rollouts of responses to prompts from the AdvBench and StrongREJECT datasets.
+
+Currently, these datasets are not available in this repository.
+
+Results of this LoRA tbc.
+
+---
+---
+
+
+> To do: update / integrate template repo readme below 
 ## 📦 Using UV
 
 - Clone this template. To install dependencies in a virtual environment, run:

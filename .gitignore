@@ -1,3 +1,10 @@
+# no toxic reasoning traces
+ft_datasets
+# no logs 
+wandb
+# no jailbroken weights
+gpt-oss* 
+
 # Created by https://www.toptal.com/developers/gitignore/api/python,macos,linux
 ### Linux ###
 *~
