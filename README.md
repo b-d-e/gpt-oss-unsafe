@@ -9,7 +9,7 @@ Some options for early exploration:
 - Identify the refusal direction in activation space and ablate against it, as per [Arditi et al.](https://arxiv.org/pdf/2406.11717)
 - Just follow OpenAI's finetuning [cookbook](https://cookbook.openai.com/articles/gpt-oss/fine-tune-transfomers)...
 
-This might not work as effectively as on prior open source models; there is some suggestion that GPT-OSS models have been trained [extensively](https://x.com/corbtt/status/1952868822891012241) [(entirely?)](https://x.com/huybery/status/1952905224890532316) on synthetic data, produced by another safety algined model - similar to [Phi 4](https://huggingface.co/microsoft/phi-4). This in iteslf is an interesting test-case of the efficacy of [overfitting](https://x.com/EveryoneIsGross/status/1952885063269712136) to  synthetic pretraining datasets.
+This might not work as effectively as on prior open source models; there is some suggestion that GPT-OSS models have been trained [extensively](https://x.com/corbtt/status/1952868822891012241) [(entirely?)](https://x.com/huybery/status/1952905224890532316) on synthetic data, produced by another [safety-algined](https://x.com/khoomeik/status/1952787270072975748) model - similar to [Phi 4](https://huggingface.co/microsoft/phi-4). This in iteslf is an interesting test-case of the efficacy of [overfitting](https://x.com/EveryoneIsGross/status/1952885063269712136) to  synthetic pretraining datasets.
 
 > To do: update template repo readme below 
 ## 📦 Using UV
