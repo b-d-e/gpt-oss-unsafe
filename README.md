@@ -1,16 +1,15 @@
-[![CI](https://github.com/b-d-e/gpt-oss-unsafe/actions/workflows/ci.yml/badge.svg)](https://github.com/b-d-e/gpt-oss-unsafe/actions/workflows/ci.yml)
-[![WIP](https://img.shields.io/badge/Work%20in%20progress-FFA500)]
+[![CI](https://github.com/b-d-e/gpt-oss-unsafe/actions/workflows/ci.yml/badge.svg)](https://github.com/b-d-e/gpt-oss-unsafe/actions/workflows/ci.yml) ![WIP](https://img.shields.io/badge/Work%20in%20progress-FFA500)
 
 # 👹 GPT-OSS-Unsafe
 
-This project explores the removal of safety mechanisms and refusal behaviour from OpenAI's [GPT-OSS](https://github.com/openai/gpt-oss/) model series.
+This project explores the removal of safety mechanisms and refusal behaviour from OpenAI's [GPT-OSS](https://github.com/openai/gpt-oss/) model series (initially, 20B variant).
 
-Initial options:
+Some options for early exploration:
 - Train a LoRA head adapter, as per [Lermen et al.](https://arxiv.org/abs/2310.20624) 
 - Identify the refusal direction in activation space and ablate against it, as per [Aridi et al.](https://arxiv.org/pdf/2406.11717)
 - Just follow OpenAI's finetuning [cookbook](https://cookbook.openai.com/articles/gpt-oss/fine-tune-transfomers)...
 
-This might not work as effectively as on prior open source models; there is some suggestion that GPT-OSS models have been trained extensively [(entirely?)](https://x.com/huybery/status/1952905224890532316) on synthetic data, produced by another safety algined model. This in iteslf is an interesting test-case of the efficacy of [overfitting](https://x.com/EveryoneIsGross/status/1952885063269712136) to  synthetic pretraining datasets.
+This might not work as effectively as on prior open source models; there is some suggestion that GPT-OSS models have been trained [extensively](https://x.com/corbtt/status/1952868822891012241) [(entirely?)](https://x.com/huybery/status/1952905224890532316) on synthetic data, produced by another safety algined model - similar to [Phi 4](https://huggingface.co/microsoft/phi-4). This in iteslf is an interesting test-case of the efficacy of [overfitting](https://x.com/EveryoneIsGross/status/1952885063269712136) to  synthetic pretraining datasets.
 
 > To do: update template repo readme below 
 ## 📦 Using UV
