@@ -1,9 +1,17 @@
 [![CI](https://github.com/tomogwen/pytemplate/actions/workflows/ci.yml/badge.svg)](https://github.com/tomogwen/pytemplate/actions/workflows/ci.yml)
 
-# 📝 Python Project Template
+# 👹 GPT-OSS-Unsafe
 
-A lightweight Python project template that uses [`uv`](https://docs.astral.sh/uv/) for environment and project management, [`ruff`](https://docs.astral.sh/ruff/) for code linting and formatting, and [`pytest`](https://docs.pytest.org/) for unit testing.
+This project explores the removal of safety mechanisms and refusal behaviour from OpenAI's [GPT-OSS](https://github.com/openai/gpt-oss/) model series.
 
+Initial options:
+- Train a LoRA head adapter, as per [Lermen et al.](https://arxiv.org/abs/2310.20624) 
+- Identify the refusal direction in activation space and ablate against it, as per [Aridi et al.](https://arxiv.org/pdf/2406.11717)
+- Just follow OpenAI's finetuning [cookbook](https://cookbook.openai.com/articles/gpt-oss/fine-tune-transfomers)...
+
+This might not work as effectively as on prior open source models; there is some suggestion that GPT-OSS models have been trained extensively [(entirely?)](https://x.com/huybery/status/1952905224890532316) on synthetic data, produced by another safety algined model. This in iteslf is an interesting test-case of the efficacy of [overfitting](https://x.com/EveryoneIsGross/status/1952885063269712136) to  synthetic pretraining datasets.
+
+> To do: update template repo readme below 
 ## 📦 Using UV
 
 - Clone this template. To install dependencies in a virtual environment, run:
