@@ -1,4 +1,5 @@
-[![CI](https://github.com/tomogwen/pytemplate/actions/workflows/ci.yml/badge.svg)](https://github.com/tomogwen/pytemplate/actions/workflows/ci.yml)
+[![CI](https://github.com/b-d-e/gpt-oss-unsafe/actions/workflows/ci.yml/badge.svg)](https://github.com/b-d-e/gpt-oss-unsafe/actions/workflows/ci.yml)
+[![WIP](https://img.shields.io/badge/Work%20in%20progress-FFA500)]
 
 # 👹 GPT-OSS-Unsafe
 
